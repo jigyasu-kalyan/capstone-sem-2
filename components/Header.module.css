@@ -1,0 +1,56 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 2.5rem;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.logo {
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.navbar {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.navLinkContainer {
+    display: flex;
+    gap: 3rem;
+}
+
+.navLink {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.navLink:hover {
+    color: #0070f3;
+}
+
+.authButtons {
+    margin-left: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.authButtons button {
+    margin-left: 0.5rem;
+    padding: 0.7rem 1.25rem;
+    font-size: 1rem;
+    background-color: #2984ec;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.authButtons button:hover {
+    background-color: #005bb5;
+}
