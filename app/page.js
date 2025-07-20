@@ -2,6 +2,8 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import Header from "@/components/Header";
 import FeaturedServiceCard from "@/components/FeaturedServicesCard";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 const featuredServices = [
   {
@@ -53,6 +55,12 @@ export default function Home() {
           ))}
         </div>
       </div>
+
+      {/* Contact Us Section Code */}
+      <Contact />
+
+      {/* Footer Section Code */}
+      <Footer />
     </div>
   );
 }
