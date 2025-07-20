@@ -1,4 +1,4 @@
-.page {
+/* .page {
   --gray-rgb: 0, 0, 0;
   --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
   --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
@@ -105,10 +105,10 @@ a.secondary {
 
 .footer img {
   flex-shrink: 0;
-}
+} */
 
 /* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
+/* @media (hover: hover) and (pointer: fine) {
   a.primary:hover {
     background: var(--button-primary-hover);
     border-color: transparent;
@@ -164,4 +164,89 @@ a.secondary {
   .logo {
     filter: invert();
   }
+} */
+
+.heroSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.heroImageContainer {
+  position: relative;
+  width: 100%;
+  max-width: 83rem;
+  height: 35rem;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.heroImage {
+  object-fit: cover;
+}
+
+.overlayText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  z-index: 1;
+}
+
+.overlayText h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.overlayText p {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.overlayText button {
+  padding: 0.7rem 1.25rem;
+  font-size: 1rem;
+  background-color: #2984ec;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.overlayText button:hover {
+  background-color: #005bb5;
+}
+
+.featuredSection {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  padding-left: 6rem;
+  padding-top: 1rem;
+}
+
+.featuredSection h2 {
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
+}
+
+.featuredSectionCardContainer {
+  /* display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  /* gap: 2rem;
+  padding-top: 2rem; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+  width: 100%;
+  max-width: 1200px;
+  /* padding: 0 1rem; */
+
 }
