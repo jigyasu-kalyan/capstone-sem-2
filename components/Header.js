@@ -25,7 +25,7 @@ function Header() {
             <nav className={styles.navLinkContainer}>
                 <a href='/' className={styles.navLink}>Home</a>
                 <a href='#' className={styles.navLink}>Services</a>
-                <a href='#' className={styles.navLink}>Blogs</a>
+                <a href='/Blog' className={styles.navLink}>Blogs</a>
                 <a href='#' className={styles.navLink}>About Us</a>
             </nav>
 

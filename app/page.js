@@ -22,8 +22,7 @@ const featuredServices = [
     imageSrc: "/WellnessWorkshops.png",
     title: "Wellness Workshops",
     description: "Participate in interactive workshops focused on various aspects of mental wellness.",
-  },
-  // Add more objects here if needed
+  }
 ];
 
 export default function Home() {
