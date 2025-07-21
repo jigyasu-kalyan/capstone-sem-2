@@ -226,7 +226,7 @@ a.secondary {
 .featuredSection {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
+  align-items: center;
   padding-left: 6rem;
   padding-top: 1rem;
 }
@@ -237,11 +237,11 @@ a.secondary {
 }
 
 .featuredSectionCardContainer {
-  /* display: flex;
+  display: flex;
   flex-wrap: wrap;
-  /* justify-content: center; */
-  /* gap: 2rem;
-  padding-top: 2rem; */
+  justify-content: center;
+  gap: 2rem;
+  padding-top: 2rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2.5rem;
