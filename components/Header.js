@@ -26,7 +26,7 @@ function Header() {
                 <a href='/' className={styles.navLink}>Home</a>
                 <a href='#' className={styles.navLink}>Services</a>
                 <a href='/Blog' className={styles.navLink}>Blogs</a>
-                <a href='#' className={styles.navLink}>About Us</a>
+                <a href='/AboutUs' className={styles.navLink}>About Us</a>
             </nav>
 
             <div className={styles.authButtons}>
