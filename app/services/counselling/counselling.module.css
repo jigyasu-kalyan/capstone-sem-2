@@ -1,0 +1,145 @@
+.pageContainer {
+  padding: 2rem;
+}
+
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(to right, #d1e9ff, #e4f0ff);
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+.ctaButton {
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.ctaButton:hover {
+  background-color: #005ec4;
+}
+
+.whySection {
+  margin: 2rem 0;
+}
+
+.whySection h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.whySection ul {
+  list-style-type: disc;
+  padding-left: 2rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+.counsellorsSection {
+  margin: 3rem 0;
+}
+
+.counsellorsSection h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.profileImg {
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  margin: 0.5rem 0;
+}
+
+.card p {
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.availability {
+  display: block;
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 1rem;
+}
+
+.connectBtn {
+  background-color: #00b894;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.connectBtn:hover {
+  background-color: #019875;
+}
+
+.howItWorks {
+  background-color: #fff;
+  border-left: 4px solid #0070f3;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-top: 2rem;
+}
+
+.howItWorks h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.howItWorks ol {
+  padding-left: 1.5rem;
+  color: #555;
+  line-height: 1.8;
+}
+
+.ctaFooter {
+  text-align: center;
+  background: #dbeeff;
+  padding: 3rem 1rem;
+  border-radius: 1rem;
+  margin-top: 3rem;
+}
+
+.ctaFooter h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}

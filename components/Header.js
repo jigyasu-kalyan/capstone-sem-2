@@ -24,9 +24,9 @@ function Header() {
         <div className={styles.navbar}>
             <nav className={styles.navLinkContainer}>
                 <a href='/' className={styles.navLink}>Home</a>
-                <a href='#' className={styles.navLink}>Services</a>
-                <a href='/Blog' className={styles.navLink}>Blogs</a>
-                <a href='/AboutUs' className={styles.navLink}>About Us</a>
+                <a href='/services' className={styles.navLink}>Services</a>
+                <a href='/blog' className={styles.navLink}>Blogs</a>
+                <a href='/about' className={styles.navLink}>About Us</a>
             </nav>
 
             <div className={styles.authButtons}>
@@ -34,8 +34,8 @@ function Header() {
                 <button onClick={handleLogout}>Logout</button>
               ) : (
                 <>
-                  <a href='/Login'><button>Login</button></a>
-                  <a href='/Login'><button>Sign Up</button></a>
+                  <a href='/login'><button>Login</button></a>
+                  <a href='/login'><button>Sign Up</button></a>
                 </>
               )}
             </div>

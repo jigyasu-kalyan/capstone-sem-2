@@ -1,17 +1,12 @@
 'use client';
 
 import React from 'react';
-import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import styles from './Login.module.css';
+import styles from './login.module.css';
 
 function Login() {
 
   const router = useRouter();
-
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [error, setError] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -20,7 +15,6 @@ function Login() {
 
     if (!email || !password) {
       alert('Please fill in both email and password');
-      // return;
     }
 
     if (email === 'admin@gmail.com' && password === 'admin1234') {

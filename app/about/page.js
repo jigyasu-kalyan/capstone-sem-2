@@ -1,8 +1,9 @@
 'use client';
 
 import React from 'react';
-import styles from './AboutUs.module.css';
+import styles from './about.module.css';
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 const About = () => {
   return (
@@ -46,6 +47,8 @@ const About = () => {
             </p>
         </section>
         </div>
+
+        <Footer />
     </>
   );
 };
