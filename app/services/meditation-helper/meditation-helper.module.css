@@ -1,0 +1,50 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.heading {
+  color: #2984ec;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.time {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.timeOptions {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  background-color: #2984ec;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #216bbf;
+}
+
+.active {
+  background-color: #216bbf;
+  font-weight: bold;
+}

@@ -9,7 +9,7 @@ const servicesData = [
     title: "Meditation Helper",
     description: "Use timers and relaxing sounds to improve focus during meditation.",
     image: "/MeditationHelper.jpg",
-    link: "/MeditationHelper"
+    link: "/services/meditation-helper"
   },
   {
     title: "Mental Health Resources",
