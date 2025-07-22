@@ -15,13 +15,13 @@ const servicesData = [
     title: "Mental Health Resources",
     description: "Access a wide range of resources to help you maintain emotional well-being and mental balance.",
     image: "/MentalHealthResources.jpg",
-    link: "/Services/mental-health",
+    link: "/blog",
   },
   {
     title: "Emergency Help",
     description: "Need urgent support? We’re here 24/7 with immediate response services for any critical situation.",
     image: "/EmergencyHelp.jpg",
-    link: "/Services/emergency",
+    link: "/services/emergency-help",
   },
 ];
 
