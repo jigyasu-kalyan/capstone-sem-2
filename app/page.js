@@ -1,7 +1,7 @@
 'use client';
 
 import Image from "next/image";
-import styles from "./page.module.css";
+import styles from "./page.css";
 import Header from "@/components/Header";
 import FeaturedServiceCard from "@/components/FeaturedServicesCard";
 import Contact from "@/components/Contact";
@@ -37,7 +37,7 @@ export default function Home() {
           <div className={styles.overlayText}>
             <h1>Find Your Inner Peace</h1>
             <p>Welcome to MindfulU, your personal guide to mental wellness.</p>
-            <button>Explore Services</button>
+            <a href="/services"><button>Explore Services</button></a>
           </div>
         </div>
       </div>

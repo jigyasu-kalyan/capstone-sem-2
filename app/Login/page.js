@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { useRouter } from 'next/navigation';
-import styles from './login.module.css';
+import styles from './login.css';
 
 function Login() {
 

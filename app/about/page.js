@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import styles from './about.module.css';
+import styles from './about.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 

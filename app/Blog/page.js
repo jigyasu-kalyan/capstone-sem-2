@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import styles from './blog.module.css';
+import styles from './blog.css';
 import Header from '@/components/Header';
 
 function page() {

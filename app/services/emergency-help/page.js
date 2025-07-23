@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import styles from './emergency-help.module.css';
+import styles from './emergency-help.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 

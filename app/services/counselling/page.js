@@ -1,7 +1,7 @@
 'use client';
 
 import Header from '@/components/Header';
-import styles from './counselling.module.css';
+import styles from './counselling.css';
 import Image from 'next/image';
 import Footer from '@/components/Footer';
 

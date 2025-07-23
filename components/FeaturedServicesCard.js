@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "./FeaturedServicesCard.module.css";
+import styles from "./FeaturedServicesCard.css";
 
 export default function FeaturedServiceCard({ imageSrc, title, description }) {
   return (

@@ -1,6 +1,6 @@
 'use client';
 import React, { useState, useEffect, useRef } from 'react';
-import styles from './meditation-helper.module.css';
+import styles from './meditation-helper.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 

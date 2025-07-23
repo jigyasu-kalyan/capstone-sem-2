@@ -1,25 +1,35 @@
-import React, { useEffect, useState } from 'react'
+import React, { use, useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation';
-import styles from './Header.module.css'
+import styles from './Header.css'
 
 function Header() {
 
   const router = useRouter();
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
     const loggedIn = localStorage.getItem('isLoggedIn') === "true";
     setIsLoggedIn(loggedIn);
+
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      setDarkMode(true);
+    }
   }, []);
+
+  useEffect(() => {
+    localStorage.setItem('theme', darkMode ? 'dark' : 'light');
+  }, [darkMode]);
 
   const handleLogout = () => {
     localStorage.removeItem("isLoggedIn");
     setIsLoggedIn(false);
-    router.push("/Login");
+    router.push("/login");
   };
 
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} ${darkMode ? styles.dark : ''}`}>
         <div className={styles.logo}>MindfulU</div>
         <div className={styles.navbar}>
             <nav className={styles.navLinkContainer}>
@@ -38,6 +48,9 @@ function Header() {
                   <a href='/login'><button>Sign Up</button></a>
                 </>
               )}
+              <button onClick={() => setDarkMode(prev => !prev)}>
+                {darkMode ? '☀️ Light' : '🌙 Dark'}
+              </button>
             </div>
         </div>
     </div>

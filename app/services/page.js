@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import styles from './services.module.css';
+import styles from './services.css';
 import servicesData from './ServicesData.js';
 import Link from 'next/link';
 import Image from 'next/image';
