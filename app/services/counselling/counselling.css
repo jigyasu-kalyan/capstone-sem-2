@@ -1,8 +1,8 @@
-.pageContainer {
+.counsellingContainer {
   padding: 2rem;
 }
 
-.hero {
+.counsellingHero {
   text-align: center;
   padding: 3rem 1rem;
   background: linear-gradient(to right, #d1e9ff, #e4f0ff);
@@ -10,18 +10,18 @@
   margin-bottom: 2rem;
 }
 
-.hero h1 {
+.counsellingHero h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
-.hero p {
+.counsellingHero p {
   font-size: 1.1rem;
   margin-bottom: 1.5rem;
   color: #555;
 }
 
-.ctaButton {
+.counsellingButton {
   background-color: #0070f3;
   color: white;
   border: none;
@@ -32,7 +32,7 @@
   transition: background-color 0.2s ease;
 }
 
-.ctaButton:hover {
+.counsellingButton:hover {
   background-color: #005ec4;
 }
 
@@ -62,13 +62,13 @@
   text-align: center;
 }
 
-.cardGrid {
+.counsellingCardGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
 }
 
-.card {
+.counsellingCard {
   background-color: white;
   border-radius: 1rem;
   padding: 1.5rem;
@@ -76,28 +76,28 @@
   text-align: center;
 }
 
-.profileImg {
+.counsellingProfileImg {
   border-radius: 50%;
   margin-bottom: 1rem;
 }
 
-.card h3 {
+.counsellingCard h3 {
   margin: 0.5rem 0;
 }
 
-.card p {
+.counsellingCard p {
   color: #666;
   margin-bottom: 0.5rem;
 }
 
-.availability {
+.counsellorAvailability {
   display: block;
   font-size: 0.9rem;
   color: #888;
   margin-bottom: 1rem;
 }
 
-.connectBtn {
+.counsellorConnectBtn {
   background-color: #00b894;
   color: white;
   border: none;
@@ -108,7 +108,7 @@
   transition: background-color 0.2s ease;
 }
 
-.connectBtn:hover {
+.counsellorConnectBtn:hover {
   background-color: #019875;
 }
 
@@ -131,7 +131,7 @@
   line-height: 1.8;
 }
 
-.ctaFooter {
+.counsellingFooter {
   text-align: center;
   background: #dbeeff;
   padding: 3rem 1rem;
@@ -139,7 +139,7 @@
   margin-top: 3rem;
 }
 
-.ctaFooter h2 {
+.counsellingFooter h2 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
 }

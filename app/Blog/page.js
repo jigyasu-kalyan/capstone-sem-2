@@ -5,7 +5,7 @@ import './blog.css';
 import Header from '@/components/Header';
 import Link from 'next/link';
 
-function Page() {
+const Blog = () => {
 
     const [articles, setArticles] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -14,7 +14,7 @@ function Page() {
         const fetchArticles = async () => {
         try {
             setLoading(true);
-            const res = await fetch(`https://newsdata.io/api/1/news?apikey=pub_8832c330eac64d7bad321bd684f956a9&q=mental+health&language=en`);
+            const res = await fetch(`https://newsdata.io/api/1/news?apikey=YOUR_API_KEY&q=mental+health&language=en`);
             const data = await res.json();
             setArticles(data.results || []);
         } catch (error) {
@@ -31,7 +31,7 @@ function Page() {
     <>
         <Header />
         <div className="blogContainer">
-            <h1 className="title">Latest Mental Health Articles</h1>
+            <h1 className="blogTitle">Latest Mental Health Articles</h1>
             <div className="articles">
                 {loading ? (
                     <p>Fetching articles...</p>
@@ -50,4 +50,4 @@ function Page() {
   )
 }
 
-export default Page
+export default Blog

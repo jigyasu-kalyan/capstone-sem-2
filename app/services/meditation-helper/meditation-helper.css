@@ -1,4 +1,4 @@
-.container {
+.meditationContainer {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -7,29 +7,29 @@
   padding: 2rem;
 }
 
-.heading {
+.meditationHeading {
   color: #2984ec;
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
-.time {
+.meditationTime {
   font-size: 4rem;
   margin-bottom: 1rem;
 }
 
-.timeOptions {
+.meditationTimeOptions {
   display: flex;
   gap: 1rem;
   margin-bottom: 2rem;
 }
 
-.controls {
+.meditationControls {
   display: flex;
   gap: 1rem;
 }
 
-.btn {
+.meditationBtn {
   background-color: #2984ec;
   color: white;
   border: none;
@@ -40,11 +40,11 @@
   transition: background-color 0.3s ease;
 }
 
-.btn:hover {
+.meditationBtn:hover {
   background-color: #216bbf;
 }
 
-.active {
+.meditationActive {
   background-color: #216bbf;
   font-weight: bold;
 }

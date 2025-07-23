@@ -3,7 +3,7 @@
   padding: 4rem 2rem 2rem;
 }
 
-.columns {
+.footerColumns {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -12,48 +12,48 @@
   margin: 0 auto;
 }
 
-.column {
+.footerColumn {
   flex: 1;
   min-width: 200px;
 }
 
-.column h3 {
+.footerColumn h3 {
   font-size: 2rem;
   margin-bottom: 1rem;
   color: #0070f3;
 }
 
-.column h4 {
+.footerColumn h4 {
   font-size: 1.3rem;
   margin-bottom: 1rem;
 }
 
-.column p {
+.footerColumn p {
   font-size: 1rem;
   color: #666;
   line-height: 1.6;
 }
 
-.column ul {
+.footerColumn ul {
   list-style: none;
   padding: 0;
 }
 
-.column li {
+.footerColumn li {
   margin-bottom: 0.7rem;
 }
 
-.column a {
+.footerColumn a {
   text-decoration: none;
   color: #0070f3;
   transition: color 0.3s;
 }
 
-.column a:hover {
+.footerColumn a:hover {
   color: #0051a3;
 }
 
-.bottom {
+.footerBottom {
   text-align: center;
   margin-top: 3rem;
   font-size: 0.9rem;

@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation';
 import './login.css';
 import Link from 'next/link';
 
-function Login() {
+const Login = () => {
 
   const router = useRouter();
 
@@ -30,12 +30,12 @@ function Login() {
   return (
     <div className="loginWrapper">
       <div className="loginCard">
-        <h2 className="title">Welcome Back</h2>
-        <p className="subtitle">Login to your MindfulU account</p>
+        <h2 className="loginTitle">Welcome Back</h2>
+        <p className="loginSubtitle">Login to your MindfulU account</p>
         
-        <form className="form" onSubmit={handleSubmit}>
-          <input type="email" placeholder="Email" className="input" />
-          <input type="password" placeholder="Password" className="input" />
+        <form className="loginForm" onSubmit={handleSubmit}>
+          <input type="email" placeholder="Email" className="loginInput" />
+          <input type="password" placeholder="Password" className="loginInput" />
           
           <button type="submit" className="loginButton">Login</button>
         </form>

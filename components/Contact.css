@@ -32,7 +32,7 @@
   outline: none;
 }
 
-.checkboxLabel {
+.contactUsCheckboxLabel {
     display: flex;
     align-items: center;
     margin-top: 1rem;
@@ -40,13 +40,13 @@
     max-width: 22rem;
 }
 
-.checkboxLabel input[type="checkbox"] {
+.contactUsCheckboxLabel input[type="checkbox"] {
     margin-right: 0.6rem;
     width: 1.5rem;
     height: 1.5rem;
 }
 
-.submitButton {
+.contactUsSubmitButton {
     margin-top: 1.5rem;
     padding: 0.7rem 1.25rem;
     font-size: 1rem;
@@ -61,6 +61,6 @@
     width: 100%;
 }
 
-.submitButton:hover {
+.contactUsSubmitButton:hover {
     background-color: #005bb5;
 }

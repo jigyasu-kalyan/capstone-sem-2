@@ -14,7 +14,7 @@ function Services() {
       <Header />
 
       <div className="servicesContainer">
-        <h1 className="heading">Our Services</h1>
+        <h1 className="servicesHeading">Our Services</h1>
         <div className="serviceList">
           {servicesData.map((service, index) => (
             <div key={index} className="serviceCard">
@@ -27,7 +27,7 @@ function Services() {
               />
               <h2>{service.title}</h2>
               <p>{service.description}</p>
-              <Link href={service.link} className="learnMore">Learn More →</Link>
+              <Link href={service.link} className="serviceLearnMore">Learn More →</Link>
             </div>
           ))}
         </div>

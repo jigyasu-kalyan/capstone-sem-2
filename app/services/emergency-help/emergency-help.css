@@ -1,4 +1,4 @@
-.container {
+.emergencyContainer {
   padding: 2rem;
   max-width: 800px;
   margin: 2rem auto;
@@ -7,21 +7,21 @@
   box-shadow: 0 0 10px rgba(41, 132, 236, 0.2);
 }
 
-.heading {
+.emergencyHeading {
   font-size: 2.5rem;
   color: #2984ec;
   margin-bottom: 1rem;
   text-align: center;
 }
 
-.description {
+.emergencyDescription {
   font-size: 1.1rem;
   margin-bottom: 2rem;
   line-height: 1.6;
   text-align: center;
 }
 
-.card {
+.emergencyCard {
   background-color: #f1f7ff;
   border-left: 4px solid #2984ec;
   padding: 1.5rem;
@@ -29,20 +29,20 @@
   border-radius: 6px;
 }
 
-.card h2 {
+.emergencyCard h2 {
   color: #2984ec;
   margin-bottom: 0.8rem;
 }
 
-.card ul {
+.emergencyCard ul {
   margin-left: 1.5rem;
 }
 
-.card li {
+.emergencyCard li {
   margin-bottom: 0.5rem;
 }
 
-.card a {
+.emergencyCard a {
   color: #2984ec;
   text-decoration: underline;
 }

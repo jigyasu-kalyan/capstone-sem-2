@@ -55,26 +55,26 @@ const MeditationHelper = () => {
     <>
         <Header />
 
-        <div className="container">
-        <h1 className="heading">Meditation Helper</h1>
-        <div className="time">{formatTime(time)}</div>
+        <div className="meditationContainer">
+        <h1 className="meditationHeading">Meditation Helper</h1>
+        <div className="meditationTime">{formatTime(time)}</div>
 
-        <div className="timeOptions">
+        <div className="meditationTimeOptions">
             {[60, 300, 600].map((sec) => (
             <button
                 key={sec}
                 onClick={() => handleTimeSelect(sec)}
-                className={`btn ${time === sec ? "active" : ''}`}
+                className={`meditationBtn ${time === sec ? "meditationActive" : ''}`}
             >
                 {sec / 60} min
             </button>
             ))}
         </div>
 
-        <div className="controls">
-            <button className="btn" onClick={handleStart}>Start</button>
-            <button className="btn" onClick={handlePause}>Pause</button>
-            <button className="btn" onClick={handleReset}>Reset</button>
+        <div className="meditationControls">
+            <button className="meditationBtn" onClick={handleStart}>Start</button>
+            <button className="meditationBtn" onClick={handlePause}>Pause</button>
+            <button className="meditationBtn" onClick={handleReset}>Reset</button>
         </div>
         </div>
 

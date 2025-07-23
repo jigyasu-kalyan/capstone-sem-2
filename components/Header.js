@@ -1,10 +1,11 @@
+'use client';
 
 import React, {useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation';
 import './Header.css'
 import Link from 'next/link';
 
-function Header() {
+const Header = () => {
 
   const router = useRouter();
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -21,7 +22,7 @@ function Header() {
   };
 
   return (
-    <div className="container">
+    <div className="headerContainer">
         <div className="logo">MindfulU</div>
         <div className="navbar">
             <nav className="navLinkContainer">
@@ -33,7 +34,7 @@ function Header() {
 
             <div className="authButtons">
               {isLoggedIn ? (
-                <button onClick="handleLogout">Logout</button>
+                <button onClick={handleLogout}>Logout</button>
               ) : (
                 <>
                   <Link href='/login'><button>Login</button></Link>
@@ -46,4 +47,4 @@ function Header() {
   )
 }
 
-export default Header
+export default Header;

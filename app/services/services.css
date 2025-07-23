@@ -4,7 +4,7 @@
   text-align: center;
 }
 
-.heading {
+.servicesHeading {
   font-size: 3rem;
   margin-bottom: 40px;
   color: #333;
@@ -51,7 +51,7 @@
   margin-bottom: 12px;
 }
 
-.learnMore {
+.serviceLearnMore {
   margin-top: 15px;
   display: inline-block;
   color: #0070f3;
@@ -60,6 +60,6 @@
   transition: color 0.2s;
 }
 
-.learnMore:hover {
+.serviceLearnMore:hover {
   color: #0047a3;
 }

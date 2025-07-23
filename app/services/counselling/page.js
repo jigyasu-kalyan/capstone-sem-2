@@ -26,17 +26,17 @@ const counsellors = [
   }
 ];
 
-export default function CounsellingPage() {
+const Counselling = () => {
   return (
     <>
       <Header />
 
-      <div className="pageContainer">
+      <div className="counsellingContainer">
 
-        <section className="hero">
+        <section className="counsellingHero">
           <h1>Connect with Certified Mental Health Professionals</h1>
           <p>Private • Confidential • Experienced Counsellors</p>
-          <button className="ctaButton">Book a Session</button>
+          <button className="counsellingButton">Book a Session</button>
         </section>
 
         <section className="whySection">
@@ -51,20 +51,20 @@ export default function CounsellingPage() {
 
         <section className="counsellorsSection">
           <h2>Our Counsellors</h2>
-          <div className="cardGrid">
+          <div className="counsellingCardGrid">
             {counsellors.map((counsellor, idx) => (
-              <div key={idx} className="card">
+              <div key={idx} className="counsellingCard">
                 <Image
                   src={counsellor.image}
                   alt={counsellor.name}
                   width={100}
                   height={100}
-                  className="profileImg"
+                  className="counsellingProfileImg"
                 />
                 <h3>{counsellor.name}</h3>
                 <p>{counsellor.specialization}</p>
-                <span className="availability">{counsellor.availability}</span>
-                <button className="connectBtn">Connect</button>
+                <span className="counsellorAvailability">{counsellor.availability}</span>
+                <button className="counsellorConnectBtn">Connect</button>
               </div>
             ))}
           </div>
@@ -79,9 +79,9 @@ export default function CounsellingPage() {
           </ol>
         </section>
 
-        <section className="ctaFooter">
-          <h2>You don’t have to go through it alone.</h2>
-          <button className="ctaButton">Find a Counsellor</button>
+        <section className="counsellingFooter">
+          <h2>You don&apos;t have to go through it alone.</h2>
+          <button className="counsellingButton">Find a Counsellor</button>
         </section>
       </div>
 
@@ -89,3 +89,5 @@ export default function CounsellingPage() {
     </>
   );
 }
+
+export default Counselling;

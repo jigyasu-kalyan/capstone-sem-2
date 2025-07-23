@@ -6,18 +6,18 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
 
-function EmergencyHelp() {
+const EmergencyHelp = () => {
   return (
     <>
         <Header />
 
-        <div className="container">
-        <h1 className="heading">Emergency Help</h1>
-        <p className="description">
+        <div className="emergencyContainer">
+        <h1 className="emergencyHeading">Emergency Help</h1>
+        <p className="emergencyDescription">
             If you&apos;re in crisis or feeling overwhelmed, you are not alone. Reach out to someone immediately. Below are resources you can use right now:
         </p>
 
-        <div className="card">
+        <div className="emergencyCard">
             <h2>Helpline Numbers (India)</h2>
             <ul>
             <li><strong>iCall:</strong> +91 9152987821 (24x7, free and confidential)</li>
@@ -26,7 +26,7 @@ function EmergencyHelp() {
             </ul>
         </div>
 
-        <div className="card">
+        <div className="emergencyCard">
             <h2>Online Chat Services</h2>
             <p>You can also reach out through chat-based services:</p>
             <ul>
@@ -35,7 +35,7 @@ function EmergencyHelp() {
             </ul>
         </div>
 
-        <div className="card">
+        <div className="emergencyCard">
             <h2>What You Can Do Right Now</h2>
             <ul>
             <li>Call a trusted friend or family member</li>

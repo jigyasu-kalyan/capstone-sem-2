@@ -6,13 +6,13 @@ import Link from 'next/link';
 function Footer() {
   return (
     <footer className="footer">
-      <div className="columns">
-        <div className="column">
+      <div className="footerColumns">
+        <div className="footerColumn">
           <h3>MindfulU</h3>
           <p>Empowering your mental well-being through awareness, support, and resources.</p>
         </div>
 
-        <div className="column">
+        <div className="footerColumn">
           <h4>Quick Links</h4>
           <ul>
             <li><Link href="/">Home</Link></li>
@@ -22,7 +22,7 @@ function Footer() {
           </ul>
         </div>
 
-        <div className="column">
+        <div className="footerColumn">
           <h4>Follow Us</h4>
           <ul>
             <li><Link href="#">Instagram</Link></li>
@@ -32,7 +32,7 @@ function Footer() {
         </div>
       </div>
 
-      <div className="bottom">
+      <div className="footerBottom">
         <p>© 2025 MindfulU. All rights reserved.</p>
       </div>
     </footer>
