@@ -35,7 +35,7 @@ const About = () => {
         <section className="aboutSection">
             <h2>The Creator</h2>
             <p>
-            Hi, I'm Jigyasu Kalyan, a college student with a deep interest in mental health,
+            Hi, I&apos;m Jigyasu Kalyan, a college student with a deep interest in mental health,
             technology, and creating meaningful change. This solo project is my contribution
             toward building a more mindful and supportive digital community.
             </p>

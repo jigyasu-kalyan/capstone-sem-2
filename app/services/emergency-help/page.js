@@ -14,7 +14,7 @@ function EmergencyHelp() {
         <div className="container">
         <h1 className="heading">Emergency Help</h1>
         <p className="description">
-            If you're in crisis or feeling overwhelmed, you are not alone. Reach out to someone immediately. Below are resources you can use right now:
+            If you&apos;re in crisis or feeling overwhelmed, you are not alone. Reach out to someone immediately. Below are resources you can use right now:
         </p>
 
         <div className="card">

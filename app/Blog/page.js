@@ -3,8 +3,9 @@
 import React, { useEffect, useState } from 'react';
 import './blog.css';
 import Header from '@/components/Header';
+import Link from 'next/link';
 
-function page() {
+function Page() {
 
     const [articles, setArticles] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -13,7 +14,7 @@ function page() {
         const fetchArticles = async () => {
         try {
             setLoading(true);
-            const res = await fetch(`https://newsdata.io/api/1/news?apikey=YOUR_API_KEY&q=mental+health&language=en`);
+            const res = await fetch(`https://newsdata.io/api/1/news?apikey=pub_8832c330eac64d7bad321bd684f956a9&q=mental+health&language=en`);
             const data = await res.json();
             setArticles(data.results || []);
         } catch (error) {
@@ -39,7 +40,7 @@ function page() {
                         <div key={index} className="articleCard">
                             <h2> {article.title} </h2>
                             <p> {article.description} </p>
-                            <a href={article.link} target="_blank" rel="noopener noreferrer" >Read More</a>
+                            <Link href={article.link} target="_blank" rel="noopener noreferrer" >Read More</Link>
                         </div>
                     ))
                 )}
@@ -49,4 +50,4 @@ function page() {
   )
 }
 
-export default page
+export default Page
