@@ -1,11 +1,12 @@
 'use client';
 
 import Image from "next/image";
-import styles from "./page.css";
+import "./page.css";
 import Header from "@/components/Header";
 import FeaturedServiceCard from "@/components/FeaturedServicesCard";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import Link from "next/link";
 
 const featuredServices = [
   {
@@ -31,21 +32,21 @@ export default function Home() {
       <Header />
 
       {/* Hero Section Code */}
-      <div className={styles.heroSection}>
-        <div className={styles.heroImageContainer}>
+      <div className="heroSection">
+        <div className="heroImageContainer">
           <Image src="/HeroSectionImage.jpg" alt="Mindful" fill />
-          <div className={styles.overlayText}>
+          <div className="overlayText">
             <h1>Find Your Inner Peace</h1>
             <p>Welcome to MindfulU, your personal guide to mental wellness.</p>
-            <a href="/services"><button>Explore Services</button></a>
+            <Link href="/services"><button>Explore Services</button></Link>
           </div>
         </div>
       </div>
 
       {/* Featured Services Section Code */}
-      <div className={styles.featuredSection}>
+      <div className="featuredSection">
         <h2>Featured Services</h2>
-        <div className={styles.featuredSectionCardContainer}>
+        <div className="featuredSectionCardContainer">
           {featuredServices.map((service, index) => (
             <FeaturedServiceCard
               key = {index}

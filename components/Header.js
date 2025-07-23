@@ -1,26 +1,18 @@
-import React, { use, useEffect, useState } from 'react'
+
+import React, {useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation';
-import styles from './Header.css'
+import './Header.css'
+import Link from 'next/link';
 
 function Header() {
 
   const router = useRouter();
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
     const loggedIn = localStorage.getItem('isLoggedIn') === "true";
     setIsLoggedIn(loggedIn);
-
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'dark') {
-      setDarkMode(true);
-    }
   }, []);
-
-  useEffect(() => {
-    localStorage.setItem('theme', darkMode ? 'dark' : 'light');
-  }, [darkMode]);
 
   const handleLogout = () => {
     localStorage.removeItem("isLoggedIn");
@@ -29,28 +21,25 @@ function Header() {
   };
 
   return (
-    <div className={`${styles.container} ${darkMode ? styles.dark : ''}`}>
-        <div className={styles.logo}>MindfulU</div>
-        <div className={styles.navbar}>
-            <nav className={styles.navLinkContainer}>
-                <a href='/' className={styles.navLink}>Home</a>
-                <a href='/services' className={styles.navLink}>Services</a>
-                <a href='/blog' className={styles.navLink}>Blogs</a>
-                <a href='/about' className={styles.navLink}>About Us</a>
+    <div className="container">
+        <div className="logo">MindfulU</div>
+        <div className="navbar">
+            <nav className="navLinkContainer">
+                <Link href='/' className="navLink">Home</Link>
+                <Link href='/services' className="navLink">Services</Link>
+                <Link href='/blog' className="navLink">Blogs</Link>
+                <Link href='/about' className="navLink">About Us</Link>
             </nav>
 
-            <div className={styles.authButtons}>
+            <div className="authButtons">
               {isLoggedIn ? (
-                <button onClick={handleLogout}>Logout</button>
+                <button onClick="handleLogout">Logout</button>
               ) : (
                 <>
-                  <a href='/login'><button>Login</button></a>
-                  <a href='/login'><button>Sign Up</button></a>
+                  <Link href='/login'><button>Login</button></Link>
+                  <Link href='/login'><button>Sign Up</button></Link>
                 </>
               )}
-              <button onClick={() => setDarkMode(prev => !prev)}>
-                {darkMode ? '☀️ Light' : '🌙 Dark'}
-              </button>
             </div>
         </div>
     </div>

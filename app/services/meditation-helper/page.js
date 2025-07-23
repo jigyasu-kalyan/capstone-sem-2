@@ -1,6 +1,6 @@
 'use client';
 import React, { useState, useEffect, useRef } from 'react';
-import styles from './meditation-helper.css';
+import './meditation-helper.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
@@ -55,26 +55,26 @@ const MeditationHelper = () => {
     <>
         <Header />
 
-        <div className={styles.container}>
-        <h1 className={styles.heading}>Meditation Helper</h1>
-        <div className={styles.time}>{formatTime(time)}</div>
+        <div className="container">
+        <h1 className="heading">Meditation Helper</h1>
+        <div className="time">{formatTime(time)}</div>
 
-        <div className={styles.timeOptions}>
+        <div className="timeOptions">
             {[60, 300, 600].map((sec) => (
             <button
                 key={sec}
                 onClick={() => handleTimeSelect(sec)}
-                className={`${styles.btn} ${time === sec ? styles.active : ''}`}
+                className={`btn ${time === sec ? "active" : ''}`}
             >
                 {sec / 60} min
             </button>
             ))}
         </div>
 
-        <div className={styles.controls}>
-            <button className={styles.btn} onClick={handleStart}>Start</button>
-            <button className={styles.btn} onClick={handlePause}>Pause</button>
-            <button className={styles.btn} onClick={handleReset}>Reset</button>
+        <div className="controls">
+            <button className="btn" onClick={handleStart}>Start</button>
+            <button className="btn" onClick={handlePause}>Pause</button>
+            <button className="btn" onClick={handleReset}>Reset</button>
         </div>
         </div>
 

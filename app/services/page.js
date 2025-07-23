@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import styles from './services.css';
+import './services.css';
 import servicesData from './ServicesData.js';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -13,21 +13,21 @@ function Services() {
     <>
       <Header />
 
-      <div className={styles.servicesContainer}>
-        <h1 className={styles.heading}>Our Services</h1>
-        <div className={styles.serviceList}>
+      <div className="servicesContainer">
+        <h1 className="heading">Our Services</h1>
+        <div className="serviceList">
           {servicesData.map((service, index) => (
-            <div key={index} className={styles.serviceCard}>
+            <div key={index} className="serviceCard">
               <Image 
                 src={service.image} 
                 alt={service.title} 
                 width={80} 
                 height={80} 
-                className={styles.serviceImage}
+                className="serviceImage"
               />
               <h2>{service.title}</h2>
               <p>{service.description}</p>
-              <Link href={service.link} className={styles.learnMore}>Learn More →</Link>
+              <Link href={service.link} className="learnMore">Learn More →</Link>
             </div>
           ))}
         </div>

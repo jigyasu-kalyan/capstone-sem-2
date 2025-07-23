@@ -1,7 +1,7 @@
 'use client';
 
 import Header from '@/components/Header';
-import styles from './counselling.css';
+import './counselling.css';
 import Image from 'next/image';
 import Footer from '@/components/Footer';
 
@@ -31,15 +31,15 @@ export default function CounsellingPage() {
     <>
       <Header />
 
-      <div className={styles.pageContainer}>
+      <div className="pageContainer">
 
-        <section className={styles.hero}>
+        <section className="hero">
           <h1>Connect with Certified Mental Health Professionals</h1>
           <p>Private • Confidential • Experienced Counsellors</p>
-          <button className={styles.ctaButton}>Book a Session</button>
+          <button className="ctaButton">Book a Session</button>
         </section>
 
-        <section className={styles.whySection}>
+        <section className="whySection">
           <h2>Why Individual Counselling?</h2>
           <ul>
             <li>Personalised one-on-one support</li>
@@ -49,28 +49,28 @@ export default function CounsellingPage() {
           </ul>
         </section>
 
-        <section className={styles.counsellorsSection}>
+        <section className="counsellorsSection">
           <h2>Our Counsellors</h2>
-          <div className={styles.cardGrid}>
+          <div className="cardGrid">
             {counsellors.map((counsellor, idx) => (
-              <div key={idx} className={styles.card}>
+              <div key={idx} className="card">
                 <Image
                   src={counsellor.image}
                   alt={counsellor.name}
                   width={100}
                   height={100}
-                  className={styles.profileImg}
+                  className="profileImg"
                 />
                 <h3>{counsellor.name}</h3>
                 <p>{counsellor.specialization}</p>
-                <span className={styles.availability}>{counsellor.availability}</span>
-                <button className={styles.connectBtn}>Connect</button>
+                <span className="availability">{counsellor.availability}</span>
+                <button className="connectBtn">Connect</button>
               </div>
             ))}
           </div>
         </section>
 
-        <section className={styles.howItWorks}>
+        <section className="howItWorks">
           <h2>How It Works</h2>
           <ol>
             <li>Choose a counsellor</li>
@@ -79,9 +79,9 @@ export default function CounsellingPage() {
           </ol>
         </section>
 
-        <section className={styles.ctaFooter}>
+        <section className="ctaFooter">
           <h2>You don’t have to go through it alone.</h2>
-          <button className={styles.ctaButton}>Find a Counsellor</button>
+          <button className="ctaButton">Find a Counsellor</button>
         </section>
       </div>
 

@@ -1,19 +1,20 @@
 'use client';
 
 import React from 'react';
-import styles from './about.css';
+import './about.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import Link from 'next/link';
 
 const About = () => {
   return (
     <>
         <Header />
 
-        <div className={styles.aboutContainer}>
-        <h1 className={styles.heading}>About Us</h1>
+        <div className="aboutContainer">
+        <h1 className="heading">About Us</h1>
 
-        <section className={styles.aboutSection}>
+        <section className="aboutSection">
             <h2>Our Mission</h2>
             <p>
             Our mission is to promote mental wellness by providing informative resources,
@@ -22,7 +23,7 @@ const About = () => {
             </p>
         </section>
 
-        <section className={styles.aboutSection}>
+        <section className="aboutSection">
             <h2>Our Story</h2>
             <p>
             Started as a college project, this platform reflects a passion for emotional
@@ -31,7 +32,7 @@ const About = () => {
             </p>
         </section>
 
-        <section className={styles.aboutSection}>
+        <section className="aboutSection">
             <h2>The Creator</h2>
             <p>
             Hi, I'm Jigyasu Kalyan, a college student with a deep interest in mental health,
@@ -40,10 +41,10 @@ const About = () => {
             </p>
         </section>
 
-        <section className={styles.aboutSection}>
+        <section className="aboutSection">
             <h2>Contact</h2>
             <p>
-            Feel free to reach out via email: <a href="mailto:email@example.com">email@example.com</a>
+            Feel free to reach out via email: <Link href="mailto:email@example.com">email@example.com</Link>
             </p>
         </section>
         </div>

@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import styles from './blog.css';
+import './blog.css';
 import Header from '@/components/Header';
 
 function page() {
@@ -29,14 +29,14 @@ function page() {
   return (
     <>
         <Header />
-        <div className={styles.blogContainer}>
-            <h1 className={styles.title}>Latest Mental Health Articles</h1>
-            <div className={styles.articles}>
+        <div className="blogContainer">
+            <h1 className="title">Latest Mental Health Articles</h1>
+            <div className="articles">
                 {loading ? (
                     <p>Fetching articles...</p>
                 ) : (
                     articles.map((article, index) => (
-                        <div key={index} className={styles.articleCard}>
+                        <div key={index} className="articleCard">
                             <h2> {article.title} </h2>
                             <p> {article.description} </p>
                             <a href={article.link} target="_blank" rel="noopener noreferrer" >Read More</a>

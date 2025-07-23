@@ -2,7 +2,8 @@
 
 import React from 'react';
 import { useRouter } from 'next/navigation';
-import styles from './login.css';
+import './login.css';
+import Link from 'next/link';
 
 function Login() {
 
@@ -27,20 +28,20 @@ function Login() {
   };
 
   return (
-    <div className={styles.loginWrapper}>
-      <div className={styles.loginCard}>
-        <h2 className={styles.title}>Welcome Back</h2>
-        <p className={styles.subtitle}>Login to your MindfulU account</p>
+    <div className="loginWrapper">
+      <div className="loginCard">
+        <h2 className="title">Welcome Back</h2>
+        <p className="subtitle">Login to your MindfulU account</p>
         
-        <form className={styles.form} onSubmit={handleSubmit}>
-          <input type="email" placeholder="Email" className={styles.input} />
-          <input type="password" placeholder="Password" className={styles.input} />
+        <form className="form" onSubmit={handleSubmit}>
+          <input type="email" placeholder="Email" className="input" />
+          <input type="password" placeholder="Password" className="input" />
           
-          <button type="submit" className={styles.loginButton}>Login</button>
+          <button type="submit" className="loginButton">Login</button>
         </form>
 
-        <p className={styles.signupPrompt}>
-          Don't have an account? <a href="#" className={styles.signupLink}>Sign Up</a>
+        <p className="signupPrompt">
+          Don't have an account? <Link href="#" className="signupLink">Sign Up</Link>
         </p>
       </div>
     </div>

@@ -1,15 +1,17 @@
+"use client";
 import Image from "next/image";
-import styles from "./FeaturedServicesCard.css";
+import "./FeaturedServicesCard.css";
+import Link from "next/link";
 
 export default function FeaturedServiceCard({ imageSrc, title, description }) {
   return (
-    <div className={styles.card}>
-      <div className={styles.imageWrapper}>
-        <Image src={imageSrc} alt={title} width={300} height={200} className={styles.image} />
+    <div className="card">
+      <div className="imageWrapper">
+        <Image src={imageSrc} alt={title} width={300} height={200} className="image" />
       </div>
-      <div className={styles.featuredServiceCardContent}>
-        <h3 className={styles.title}>{title}</h3>
-        <p className={styles.description}>{description}</p>
+      <div className="featuredServiceCardContent">
+        <h3 className="title">{title}</h3>
+        <p className="description">{description}</p>
       </div>
     </div>
   );
