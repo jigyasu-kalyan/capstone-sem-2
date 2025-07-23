@@ -3,7 +3,6 @@
 import React, { useEffect, useState } from 'react';
 import './blog.css';
 import Header from '@/components/Header';
-import Link from 'next/link';
 
 const Blog = () => {
 
@@ -35,15 +34,18 @@ const Blog = () => {
             <div className="articles">
                 {loading ? (
                     <p>Fetching articles...</p>
-                ) : (
-                    articles.map((article, index) => (
-                        <div key={index} className="articleCard">
-                            <h2> {article.title} </h2>
-                            <p> {article.description} </p>
-                            <Link href={article.link} target="_blank" rel="noopener noreferrer" >Read More</Link>
-                        </div>
-                    ))
-                )}
+                ) : (articles.length === 0) ? (
+                        <div>Sorry, we are having some trouble loading articles. We will try to resolve it soon.</div>
+                    ) : (
+                        articles.map((article, index) => (
+                            <div key={index} className="articleCard">
+                                <h2> {article.title} </h2>
+                                <p> {article.description} </p>
+                                <a href={article.link} target="_blank" rel="noopener noreferrer" >Read More</a>
+                            </div>
+                        ))
+                    )
+                }
             </div>
         </div>
     </>

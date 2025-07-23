@@ -1,4 +1,5 @@
 "use client";
+
 import React from 'react';
 import './Footer.css'
 import Link from 'next/link';
@@ -17,17 +18,17 @@ function Footer() {
           <ul>
             <li><Link href="/">Home</Link></li>
             <li><Link href="/about">About</Link></li>
-            <li><Link href="/features">Features</Link></li>
-            <li><Link href="/contact">Contact</Link></li>
+            <li><Link href="/services">Services</Link></li>
+            <li><Link href="/">Contact</Link></li>
           </ul>
         </div>
 
         <div className="footerColumn">
           <h4>Follow Us</h4>
           <ul>
-            <li><Link href="#">Instagram</Link></li>
-            <li><Link href="#">LinkedIn</Link></li>
-            <li><Link href="#">Twitter</Link></li>
+            <li><a href="https://www.instagram.com/">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+            <li><a href="https://x.com/">Twitter</a></li>
           </ul>
         </div>
       </div>

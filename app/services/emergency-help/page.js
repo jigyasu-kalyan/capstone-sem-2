@@ -4,7 +4,6 @@ import React from 'react';
 import './emergency-help.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import Link from 'next/link';
 
 const EmergencyHelp = () => {
   return (
@@ -30,8 +29,8 @@ const EmergencyHelp = () => {
             <h2>Online Chat Services</h2>
             <p>You can also reach out through chat-based services:</p>
             <ul>
-            <li><Link href="https://www.icallhelpline.org" target="_blank" rel="noopener noreferrer">iCall Helpline Website</Link></li>
-            <li><Link href="https://www.7cups.com" target="_blank" rel="noopener noreferrer">7 Cups of Tea</Link></li>
+            <li><a href="https://www.icallhelpline.org" target="_blank" rel="noopener noreferrer">iCall Helpline Website</a></li>
+            <li><a href="https://www.7cups.com" target="_blank" rel="noopener noreferrer">7 Cups of Tea</a></li>
             </ul>
         </div>
 

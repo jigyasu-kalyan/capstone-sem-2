@@ -1,7 +1,6 @@
 "use client";
 import React from 'react'
 import './Contact.css'
-import Link from 'next/link';
 
 function Contact() {
   return (
