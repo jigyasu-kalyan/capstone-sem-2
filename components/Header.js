@@ -18,7 +18,7 @@ const Header = () => {
   const handleLogout = () => {
     localStorage.removeItem("isLoggedIn");
     setIsLoggedIn(false);
-    router.push("/login");
+    router.push("/Login");
   };
 
   return (
@@ -28,7 +28,7 @@ const Header = () => {
             <nav className="navLinkContainer">
                 <Link href='/' className="navLink">Home</Link>
                 <Link href='/services' className="navLink">Services</Link>
-                <Link href='/blog' className="navLink">Blogs</Link>
+                <Link href='/Blog' className="navLink">Blogs</Link>
                 <Link href='/about' className="navLink">About Us</Link>
             </nav>
 
@@ -37,8 +37,8 @@ const Header = () => {
                 <button onClick={handleLogout}>Logout</button>
               ) : (
                 <>
-                  <button onClick={() => router.push('/login')}>Login</button>
-                  <button onClick={() => router.push('/login')}>Sign Up</button>
+                  <button onClick={() => router.push('/Login')}>Login</button>
+                  <button onClick={() => router.push('/Login')}>Sign Up</button>
                 </>
               )}
             </div>
