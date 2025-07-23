@@ -18,7 +18,7 @@ const Header = () => {
   const handleLogout = () => {
     localStorage.removeItem("isLoggedIn");
     setIsLoggedIn(false);
-    router.push("/Login");
+    router.push("/login");
   };
 
   return (
