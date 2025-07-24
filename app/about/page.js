@@ -44,7 +44,7 @@ const About = () => {
         <section className="aboutSection">
             <h2>Contact</h2>
             <p>
-            Feel free to reach out via email: <Link href="mailto:email@example.com">email@example.com</Link>
+            Feel free to reach out via email: <Link href="#">email@example.com</Link>
             </p>
         </section>
         </div>

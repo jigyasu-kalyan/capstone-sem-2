@@ -5,7 +5,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 const MeditationHelper = () => {
-  const [time, setTime] = useState(300); // default 5 mins
+  const [time, setTime] = useState(300);
   const [duration, setDuration] = useState(300);
   const [running, setRunning] = useState(false);
   const intervalRef = useRef(null);

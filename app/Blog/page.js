@@ -13,9 +13,9 @@ const Blog = () => {
         const fetchArticles = async () => {
         try {
             setLoading(true);
-            const res = await fetch(`https://newsdata.io/api/1/news?apikey=YOUR_API_KEY&q=mental+health&language=en`);
+            const res = await fetch(`https://newsdata.io/api/1/news?apikey=pub_8832c330eac64d7bad321bd684f956a9&q=mental+health&language=en`);
             const data = await res.json();
-            setArticles(data.results || []);
+            setArticles(data.results);
         } catch (error) {
             console.log("Error fetching articles:", error);
         } finally {
@@ -41,7 +41,7 @@ const Blog = () => {
                             <div key={index} className="articleCard">
                                 <h2> {article.title} </h2>
                                 <p> {article.description} </p>
-                                <a href={article.link} target="_blank" rel="noopener noreferrer" >Read More</a>
+                                <a href={article.link} >Read More</a>
                             </div>
                         ))
                     )
