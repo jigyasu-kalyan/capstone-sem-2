@@ -34,17 +34,15 @@ const Blog = () => {
             <div className="articles">
                 {loading ? (
                     <p>Fetching articles...</p>
-                ) : (articles.length === 0) ? (
-                        <div>Sorry, we are having some trouble loading articles. We will try to resolve it soon.</div>
-                    ) : (
-                        articles.map((article, index) => (
-                            <div key={index} className="articleCard">
-                                <h2> {article.title} </h2>
-                                <p> {article.description} </p>
-                                <a href={article.link} >Read More</a>
-                            </div>
-                        ))
-                    )
+                ) : (
+                    articles.map((article, index) => (
+                        <div key={index} className="articleCard">
+                            <h2> {article.title} </h2>
+                            <p> {article.description} </p>
+                            <a href={article.link} >Read More</a>
+                        </div>
+                    ))
+                )
                 }
             </div>
         </div>
